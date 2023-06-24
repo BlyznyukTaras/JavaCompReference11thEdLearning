@@ -1,5 +1,5 @@
 + [ ] Part I&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Java Language
-  + [ ] The History and Evolution of Java
+  + [x] The History and Evolution of Java
   + [ ] An Overview of Java
   + [ ] Data Types, Variables, and Arrays
   + [ ] Operators

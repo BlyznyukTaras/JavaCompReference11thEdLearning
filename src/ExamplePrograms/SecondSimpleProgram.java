@@ -1,4 +1,4 @@
-package ExamplePrograms;
+package src.ExamplePrograms;
 
 
 public class SecondSimpleProgram {
@@ -15,5 +15,6 @@ public class SecondSimpleProgram {
             System.out.println(number);
             number -= 10;
         }
+
     }
 }

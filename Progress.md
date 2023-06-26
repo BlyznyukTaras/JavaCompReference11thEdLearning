@@ -2,8 +2,8 @@
   + [x] The History and Evolution of Java
   + [x] An Overview of Java
   + [X] Data Types, Variables, and Arrays
-  + [ ] Operators
-  + [ ] Control Statements
+  + [X] Operators
+  + [X] Control Statements
   + [ ] Introducing Classes
   + [ ] A Closer Look at Methods and Classes
   + [ ] Inheritance

@@ -4,7 +4,7 @@
   + [X] Data Types, Variables, and Arrays
   + [X] Operators
   + [X] Control Statements
-  + [ ] Introducing Classes
+  + [X] Introducing Classes
   + [ ] A Closer Look at Methods and Classes
   + [ ] Inheritance
   + [ ] Packages and Interfaces

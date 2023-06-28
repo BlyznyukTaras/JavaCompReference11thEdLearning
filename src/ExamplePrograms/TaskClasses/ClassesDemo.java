@@ -1,4 +1,5 @@
-import src.ExamplePrograms.FirstClass;
+package src.ExamplePrograms.TaskClasses;
+
 import src.ExamplePrograms.TaskClasses.EasyClasses.Book;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Circle;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Rectangle;

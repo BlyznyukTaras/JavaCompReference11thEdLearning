@@ -1,4 +1,4 @@
-package src.ExamplePrograms;
+package src.ExamplePrograms.TaskClasses;
 
 public class FirstClass {
     private final int firstVar;

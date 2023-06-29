@@ -26,5 +26,6 @@ public class Student {
             System.out.print(subjects.get(i));
             if (i < 3) System.out.print(", ");
         }
+        System.out.println();
     }
 }

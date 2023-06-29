@@ -3,6 +3,7 @@ package src.ExamplePrograms.TaskClasses;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Book;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Circle;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Rectangle;
+import src.ExamplePrograms.TaskClasses.HardClasses.Library;
 import src.ExamplePrograms.TaskClasses.MediumClasses.BankAccount;
 import src.ExamplePrograms.TaskClasses.MediumClasses.Car;
 import src.ExamplePrograms.TaskClasses.MediumClasses.Student;
@@ -57,6 +58,16 @@ public class ClassesDemo {
             someStudent.addSubject("Algorithms and data structures");
             someStudent.addSubject("Foreign language");
             someStudent.showStudInfo();
+        }
+        System.out.println();
+        libraryClass: {
+            var stockLibrary = new Library("Rainbow");
+            stockLibrary.addBook("George Orwell", "1984");
+            stockLibrary.addBook("George Orwell", "Animal Farm");
+            stockLibrary.addBook("Dawn Griffiths and David Griffiths", "Head First Kotlin");
+            stockLibrary.showBooks();
+            System.out.println("\n");
+            stockLibrary.searchBooksByAuthor("George Orwell");
         }
     }
 }

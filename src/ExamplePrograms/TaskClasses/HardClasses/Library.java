@@ -31,17 +31,17 @@ public class Library {
         }
     }
     public void removeBookByName(String nameofBook) {
-//        if (!nameofBook.isEmpty()) {
-//            for (Map.Entry<String, String> book : library.entrySet()) {
-//                if (book.getValue().equals(nameofBook)) {
-//                    library.entrySet().remove(book);
-//                    System.out.printf("The book by the name \"%s\" was removed from the library\n", nameofBook);
-//                    break;
-//                }
-//            }
-//        }
-//        else System.out.println();
-
+        boolean bookFound = false;
+        if (!nameofBook.isEmpty()) {
+            for (Map.Entry<String, List<String>> allBooks : library.entrySet()) {
+                List<String> book = allBooks.getValue();
+                if (book.contains(nameofBook)) {
+                    bookFound = true;
+                    book.remove(nameofBook);
+                }
+            }
+            if (!bookFound) System.out.printf("There isn't such book called \"%s\"\n", nameofBook);
+        }
     }
     public void searchBooksByAuthor(String author) {
         if (library.containsKey(author)) {
@@ -52,6 +52,7 @@ public class Library {
                 if (i < books.size() - 1) System.out.print(", ");
             }
         }
+        System.out.println();
     }
     public void showBooks() {
         System.out.print("\nAvailable books: ");
@@ -63,6 +64,7 @@ public class Library {
                 symbolOutput(bookName, i, "; ");
             }
         }
+        System.out.println();
     }
     public void symbolOutput(List<String> list, int i, String ch) { if (i < list.size()) System.out.print(ch); }
 }

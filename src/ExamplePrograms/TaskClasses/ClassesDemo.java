@@ -3,6 +3,7 @@ package src.ExamplePrograms.TaskClasses;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Book;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Circle;
 import src.ExamplePrograms.TaskClasses.EasyClasses.Rectangle;
+import src.ExamplePrograms.TaskClasses.HardClasses.Clock;
 import src.ExamplePrograms.TaskClasses.HardClasses.Library;
 import src.ExamplePrograms.TaskClasses.MediumClasses.BankAccount;
 import src.ExamplePrograms.TaskClasses.MediumClasses.Car;
@@ -32,7 +33,7 @@ public class ClassesDemo {
         System.out.println();
         rectangleClass: {
             var genericRect = new Rectangle(17, 25);
-            System.out.printf("The area of your rectange: %d, " +
+            System.out.printf("The area of your rectangle: %d, " +
                     "its perimeter: %d\n", genericRect.rectArea(), genericRect.rectPerimeter());
         }
         System.out.println();
@@ -66,8 +67,21 @@ public class ClassesDemo {
             stockLibrary.addBook("George Orwell", "Animal Farm");
             stockLibrary.addBook("Dawn Griffiths and David Griffiths", "Head First Kotlin");
             stockLibrary.showBooks();
-            System.out.println("\n");
             stockLibrary.searchBooksByAuthor("George Orwell");
+            stockLibrary.removeBookByName("1984");
+            stockLibrary.searchBooksByAuthor("George Orwell");
+            stockLibrary.removeBookByName("Animal Farm");
+            stockLibrary.showBooks();
+        }
+        System.out.println();
+        clockClass: {
+            var newClock = new Clock();
+            newClock.show24Hours();
+            var otherClock = new Clock(24, 15, 11);
+            otherClock.show12Hours();
+            newClock.show12Hours();
+            newClock.changeTime(15, 11, 39);
+            newClock.show12Hours();
         }
     }
 }

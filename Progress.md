@@ -5,8 +5,8 @@
   + [X] Operators
   + [X] Control Statements
   + [X] Introducing Classes
-  + [ ] A Closer Look at Methods and Classes
-  + [ ] Inheritance
+  + [X] A Closer Look at Methods and Classes
+  + [X] Inheritance
   + [ ] Packages and Interfaces
   + [ ] Exception Handling
   + [ ] Multithreaded Programming

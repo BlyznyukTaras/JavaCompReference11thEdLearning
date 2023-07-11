@@ -14,7 +14,8 @@ public class Book {
         this.author = author;
         this.yearOfPublish = yearOfPublish;
     }
-    public Book(Book obj) {
+    public Book(Book obj) {  // Initializing object constructor which creates new object that is the copy of passed
+        // object in the parameter
         name = obj.name;
         author = obj.author;
         yearOfPublish = obj.yearOfPublish;

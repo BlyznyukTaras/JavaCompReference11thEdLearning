@@ -1,4 +1,4 @@
-package src.ExamplePrograms;
+package src.ExamplePrograms.SimplePrograms;
 
 public class FirstSimpleProgram {
     public static void main(String[] args) {

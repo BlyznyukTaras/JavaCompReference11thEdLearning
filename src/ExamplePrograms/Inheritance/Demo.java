@@ -48,6 +48,8 @@ public class Demo {
             RegularUser regularUser = new RegularUser(new User("somewho1", "hispassword"));
             Admin adm = new Admin(new User("Hiiiiiiiii", "iiiiiiiiiiiiiH"), 5);
             adm.showUserInfo(regularUser);
+            regularUser.changePassword("lastresort");
+            adm.showUserInfo(regularUser);
         }
     }
 }
